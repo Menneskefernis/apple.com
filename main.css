@@ -45,10 +45,17 @@ table {
 
 /* My code */
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
 	position: relative;
 	min-width: 1024px;
 	height: 100vh;
+	background: #fff;
 }
 
 #billboard {
@@ -74,8 +81,44 @@ body {
 
 .promos {
 	position: absolute;
-	background: green;
+	overflow: hidden;
 	bottom: 90px;
 	height: 200px;
-	width: 1440px;
+	width: 100%;
+}
+
+.promos ul {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	min-width: 1024px;
+	width: 100%;
+	max-width: 1440px;
+	height: 200px;
+}
+
+.promos ul li {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.promos ul li a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.promos ul li a img {
+	position: absolute;
+	left: 50%;
+	margin-left: -182px;
 }
