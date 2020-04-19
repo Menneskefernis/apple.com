@@ -162,7 +162,12 @@ body {
 	width: 85px;
 	height: 20px;
 	border: none;
+	outline: none;
 	box-shadow: 0 2px black inset;
+}
+
+#globalheader #globalsearch form input:focus {
+	
 }
 
 #globalheader #globalsearch form svg {
