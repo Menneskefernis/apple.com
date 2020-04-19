@@ -56,6 +56,13 @@ a {
 	text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -74,6 +81,39 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 292px;
+}
+
+#billboard .your-verse .header {
+	margin-top: -170px;
+	padding: 50px 0;
+	background: url("images/your_verse_scrim.png");
+	background-size: 25px 335px;
+}
+
+#billboard .header {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+}
+
+#billboard .your-verse .title {
+	margin-bottom: -9px;
+}
+
+#billboard .your-verse .subheadline {
+	margin-bottom: 27px;
+}
+
+#billboard img {
+	display: block;
+	margin: 0 auto;
+}
+
+.cta {
+	position: relative;
+	height: 31px;
+	overflow: hidden;
 }
 
 .hero {
