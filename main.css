@@ -84,7 +84,7 @@ body {
 	position: relative;
 	display: block;
 	margin: 0 auto;
-	top: 18px;
+	top: 83px;
 	width: 980px;
 	z-index: 999;
 	border-radius: 4px;
@@ -98,7 +98,8 @@ body {
 #globalheader #globalnav li {
 	flex: 1;
 	text-align: center;
-	background: linear-gradient(#fff, black);
+	background: linear-gradient(#7b7b7b, #8b8b8b 5%, #696969 50%, #5f5f5f 50%, #787778 95%, #5f6060);
+				
 	border-left: 1px solid rgba(0, 0, 0, 0.3);
 	text-shadow: 0 -1px black;
 }
@@ -116,7 +117,8 @@ body {
 }
 
 #globalheader #globalnav li:hover:not(:last-child) {
-	background: grey;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), 5%, rgba(0, 0, 0, 0.15) 15% 85%, rgba(0, 0, 0, 0)),
+				linear-gradient(#616161, #666666 5%, #4e4e4e 50%, #464646 50%, #606060 95%, #464646);
 }
 
 #globalheader #globalnav li a {
@@ -154,8 +156,9 @@ body {
 	width: 120px;
 	height: 20px;
 	border-width: 0 2px 0 1px;
-	background: #fff;
-	box-shadow: 0 2px black inset;
+	background: linear-gradient(#888888, #7f7f7f 50%, #6e6e6e 50%, #777777);
+	box-shadow: 0 1px #4a4a4a inset,
+			    0 -1px #898989 inset;
 }
 
 #globalheader #globalsearch form input {
@@ -163,16 +166,16 @@ body {
 	height: 20px;
 	border: none;
 	outline: none;
-	box-shadow: 0 2px black inset;
-}
-
-#globalheader #globalsearch form input:focus {
-	
+	box-shadow: 0 1px #4a4a4a inset,
+				0 -1px #898989 inset;
+	background: transparent;
 }
 
 #globalheader #globalsearch form svg {
 	width: 13px;
 	height: 11px;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+	filter: drop-shadow(0 1px #222);
 }
 
 #billboard {
